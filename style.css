@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: darkcyan;
+}
+.btn{
+  padding: 4px 10px;
+  margin: 5px;
+  background-color: cornsilk;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(19, 19, 19);
+}
+
+.btn.active{
+  box-shadow: rgba(0, 0, 0, 0.35) 0, -15px, 12px, -8px inset;
+}
+
+.container img{
+  animation: rotating linear infinite;
+  animation-duration: 1s;
+}
+
+@keyframes rotating {
+  from{
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to{
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
